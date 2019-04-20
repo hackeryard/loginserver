@@ -9,8 +9,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # 蓝鲸登录方式：bk_login
 # 自定义登录方式：custom_login
-# LOGIN_TYPE = 'custom_login'
-LOGIN_TYPE = 'bk_login'
+LOGIN_TYPE = 'custom_login'
+# LOGIN_TYPE = 'bk_login'
 
 # 默认bk_login，无需设置其他配置
 
