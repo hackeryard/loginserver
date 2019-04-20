@@ -66,7 +66,7 @@ def get_access_token(code):
     }
     print("+++access_token post params: ", params)
     # resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, params=params, headers=headers)
-    resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, data=params)
+    resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, data=params, headers=headers)
     
     if resp.status_code != 200:
         print("+++handle incorrectly\n")
