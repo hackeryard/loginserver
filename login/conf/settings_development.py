@@ -45,8 +45,8 @@ HTTP_SCHEMA = 'http'
 
 # cookie访问域
 # 修改访问域
-# BK_COOKIE_DOMAIN = 'bking.localhost'
-BK_COOKIE_DOMAIN = 'bking.com'
+BK_COOKIE_DOMAIN = 'bking.localhost'
+# BK_COOKIE_DOMAIN = 'bking.com'
 
 
 SECRET_KEY = 'jO149njrTj4kEx6ZbUH8Zc53bfQJctINWaEzTWIsOoxSDNwK2I'
