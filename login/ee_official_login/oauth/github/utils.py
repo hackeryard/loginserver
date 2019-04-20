@@ -60,9 +60,10 @@ def get_access_token(code):
         "client_secret": google_setting.CLIENT_SECRET
 
     }
+    print("access_token req params: ", params)
     resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, params=params)
     if resp.status_code != 200:
-        print("handle correctly")
+        print("handle incorrectly")
         # 记录错误日志
         content = resp.content[:100] if resp.content else ''
         error_msg = ("http enterprise request error! type: %s, url: %s, data: %s, "
