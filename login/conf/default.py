@@ -99,7 +99,10 @@ TEMPLATES = [
 SITE_URL = '/login/'
 
 # Runking
-PAAS_DOMAIN = 'bking.com:8003'
+# callback
+# PAAS_DOMAIN = 'bking.com:8003'
+PAAS_DOMAIN = 'bking.localhost:8003'
+
 
 STATIC_URL = '/static/'
 
