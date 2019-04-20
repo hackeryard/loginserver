@@ -58,10 +58,14 @@ def get_access_token(code):
         "redirect_uri": bk_settings.LOGIN_COMPLETE_URL,
         "client_id": google_setting.CLIENT_ID,
         "client_secret": google_setting.CLIENT_SECRET
-
     }
-    print("access_token req params: ", params)
-    resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, params=params)
+
+    # add json header
+    headers = {
+        'Accept': 'application/json'
+    }
+    print("access_token post params: ", params)
+    resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, params=params, headers = headers)
     if resp.status_code != 200:
         print("handle incorrectly")
         # 记录错误日志
