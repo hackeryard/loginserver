@@ -64,10 +64,12 @@ def get_access_token(code):
     headers = {
         'Accept': 'application/json'
     }
-    print("access_token post params: ", params)
-    resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, params=params, headers = headers)
+    print("+++access_token post params: ", params)
+    resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, params=params, headers=headers)
+    # resp = requests.post(url=google_setting.ACCESS_TOKEN_URL, data=params)
+    
     if resp.status_code != 200:
-        print("handle incorrectly")
+        print("+++handle incorrectly\n")
         # 记录错误日志
         content = resp.content[:100] if resp.content else ''
         error_msg = ("http enterprise request error! type: %s, url: %s, data: %s, "
@@ -75,7 +77,7 @@ def get_access_token(code):
         logger.error(error_msg % ('POST', google_setting.ACCESS_TOKEN_URL, str(params), resp.status_code, content))
         return None
     data = resp.json()
-    print("get access_token: ", data)
+    print("+++get access_token: ", data)
     return data.get('access_token')
 
 
