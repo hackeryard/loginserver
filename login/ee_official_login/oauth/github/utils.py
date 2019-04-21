@@ -99,9 +99,9 @@ def get_scope_data(access_token):
     data = resp.json()
     print("+++raw userinfo: ", data)
     userinfo = {
-        'username': data.get('email', ''),
+        'username': data.get('username', ''),
         'email': data.get('email', ''),
-        'chname': data.get('email', ''),
+        'chname': data.get('chname', ''),
         'phone': data.get('phone', ''),
     }
     print("userinfo", userinfo)
