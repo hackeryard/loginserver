@@ -97,6 +97,7 @@ def get_scope_data(access_token):
         logger.error(error_msg % ('GET', google_setting.SCOPE_URL, str(params), resp.status_code, content))
         return None
     data = resp.json()
+    print("+++raw userinfo: ", data)
     userinfo = {
         'username': data.get('email', ''),
         'email': data.get('email', ''),
