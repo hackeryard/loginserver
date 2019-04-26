@@ -40,7 +40,7 @@ def gen_oauth_login_url(extra_param):
         urllib.urlencode({'response_type': 'code',
                           'client_id': google_setting.CLIENT_ID,
                           'redirect_uri': bk_settings.LOGIN_COMPLETE_URL,
-                          'scope': 'openid',
+                          'scope': 'openid+offline',
                           'state': state})
     )
     print("oauth login url: ", google_oauth_login_url)
