@@ -44,6 +44,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'bkaccount',
     'bk_i18n',
+    'werkzeug_debugger_runserver',
+    'django_extensions',
 )
 
 MIDDLEWARE_CLASSES = (
