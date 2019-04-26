@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'bk_i18n',
     'werkzeug_debugger_runserver',
     'django_extensions',
+    "sslserver",
 )
 
 MIDDLEWARE_CLASSES = (
