@@ -103,7 +103,7 @@ SITE_URL = '/login/'
 
 # Runking
 # callback
-PAAS_DOMAIN = 'https://bking.com:8003'
+PAAS_DOMAIN = 'bking.com:8003'
 # PAAS_DOMAIN = 'bking.localhost:8003'
 
 
