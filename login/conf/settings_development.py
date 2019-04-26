@@ -40,7 +40,7 @@ PASSWORD = 'admin'
 
 # inner domain, use consul domain,  for api
 PAAS_INNER_DOMAIN = ''
-HTTP_SCHEMA = 'http'
+HTTP_SCHEMA = 'https'
 
 
 # cookie访问域
