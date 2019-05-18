@@ -10,6 +10,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 import os
 import sys
 from django.utils.functional import SimpleLazyObject
+import config
 
 try:
     import pymysql
@@ -44,8 +45,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'bkaccount',
     'bk_i18n',
-    'werkzeug_debugger_runserver',
-    'django_extensions',
+    #'werkzeug_debugger_runserver',
+    #'django_extensions',
     "sslserver",
 )
 
@@ -103,7 +104,8 @@ SITE_URL = '/login/'
 
 # Runking
 # callback
-PAAS_DOMAIN = 'bking.com:8003'
+# PAAS_DOMAIN = 'bking.com:8003'
+PAAS_DOMAIN = config.cfg.get('server', 'paas_domain')
 # PAAS_DOMAIN = 'bking.localhost:8003'
 
 
@@ -219,7 +221,8 @@ USERNAME = 'admin'
 PASSWORD = 'blueking'
 
 # logging config
-LOGGER_LEVEL = 'DEBUG'
+# LOGGER_LEVEL = 'DEBUG'
+LOGGER_LEVEL = config.cfg.get('server', 'log_level')
 
 LOGGING_DIR = os.environ.get('PAAS_LOGGING_DIR') or os.path.join(PROJECT_ROOT, 'logs')
 if not os.path.exists(LOGGING_DIR):

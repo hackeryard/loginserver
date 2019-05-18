@@ -8,6 +8,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 开发环境配置
 """ # noqa
+import config
 
 DEBUG = True
 
@@ -25,28 +26,28 @@ STATIC_URL = "/static/"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',   # 默认用mysql
-        'NAME': 'open_paas',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        #'HOST': '192.168.48.133',
-        'HOST': '0.0.0.0',
-        'PORT': '3306',
+        'NAME': config.cfg.get('database','database'),
+        'USER': config.cfg.get('database','user'),
+        'PASSWORD': config.cfg.get('database','password'),
+        'HOST': config.cfg.get('database','host'),
+        'PORT': config.cfg.get('database','port')
     }
 }
 
 # 初始化用户名、密码
-USERNAME = 'admin'
-PASSWORD = 'admin'
+USERNAME = config.cfg.get('admin','username')
+PASSWORD = config.cfg.get('admin','password')
 
 # inner domain, use consul domain,  for api
 PAAS_INNER_DOMAIN = ''
-HTTP_SCHEMA = 'https'
+# HTTP_SCHEMA = 'https'
+HTTP_SCHEMA = config.cfg.get('server','http_schema')
 
 
 # cookie访问域
 # 修改访问域
 # BK_COOKIE_DOMAIN = 'bking.localhost'
-BK_COOKIE_DOMAIN = 'bking.com'
+BK_COOKIE_DOMAIN = config.cfg.get('server','bk_cookie_domain')
 
 
 SECRET_KEY = 'jO149njrTj4kEx6ZbUH8Zc53bfQJctINWaEzTWIsOoxSDNwK2I'

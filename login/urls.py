@@ -45,6 +45,9 @@ urlpatterns = [
     url(r'^api/v2/get_batch_users/$', views_api_v2.BatchUsersView.as_view()),
     url(r'^api/v2/get_all_users/$', views_api_v2.AllUsersView.as_view()),
 
+    url(r'^check_password/$', views.CheckPasswordView.as_view()),
+    
+
     # 检查统一登录是否正常运行
     url(r'^healthz/', include("healthz.urls")),
     # 反搜索
