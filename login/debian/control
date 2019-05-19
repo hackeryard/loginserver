@@ -1,0 +1,12 @@
+Source: loginserver
+Section: python
+Priority: extra
+Maintainer: Runking <hrunker@gmail.com>
+Build-Depends: debhelper (>= 9), python, dh-virtualenv (>= 0.8)
+Standards-Version: 3.9.5
+
+Package: loginserver
+Architecture: any
+Pre-Depends: dpkg (>= 1.16.1), python2.7, ${misc:Pre-Depends}
+Depends: ${misc:Depends}
+Description: Loginserver service for cmdb.
