@@ -1,3 +1,0 @@
-shlibs:Depends=libc6 (>= 2.27), libexpat1 (>= 2.0.1), libpython2.7 (>= 2.7), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.0)
-misc:Depends=
-misc:Pre-Depends=
