@@ -30,7 +30,7 @@ var/
 *.spec
 
 # dh_virtualenv
-debian/loginserver
+debian/loginserver/
 
 # Installer logs
 pip-log.txt
