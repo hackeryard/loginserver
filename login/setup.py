@@ -52,10 +52,10 @@ project.update(
     name='loginserver',
     description='loginserver to providing login services for cmdb.',
     license='GNU General Public License v2 or later',
-    scripts=['bin/test.py', 'manage.py', 'settings.py','wsgi.py', 'urls.py', '__init__.py', 'bking.cert', 'bking.key'],
+    scripts=['manage.py', 'settings.py','wsgi.py', 'urls.py', '__init__.py', 'bking.cert', 'bking.key'],
     packages=find_packages(),
-    #include_package_data=True,
-    data_files=[('templates', ['favicon.ico']), ('static', ['401.html'])],
+    include_package_data=True,
+    #data_files=[('templates', ['favicon.ico']), ('static', ['401.html'])],
     classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',

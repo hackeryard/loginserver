@@ -1,0 +1,9 @@
+Package: loginserver
+Version: 1.0-0
+Architecture: amd64
+Maintainer: Runking <hrunker@gmail.com>
+Installed-Size: 54401
+Pre-Depends: dpkg (>= 1.16.1), python2.7
+Section: python
+Priority: extra
+Description: Loginserver service for cmdb.
