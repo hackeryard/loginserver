@@ -31,6 +31,7 @@ var/
 
 # dh_virtualenv
 debian/loginserver/
+debian/.debhelper/
 
 # Installer logs
 pip-log.txt
