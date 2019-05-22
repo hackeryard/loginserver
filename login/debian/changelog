@@ -1,3 +1,10 @@
+loginserver (1.0-1) UNRELEASED; urgency=medium
+
+  * update config file 
+  * 
+
+ -- root <root@ubuntu>  Wed, 22 May 2019 17:28:14 +0800
+
 loginserver (1.0-0) stable; urgency=low
 
   * Initial public release

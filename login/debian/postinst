@@ -4,6 +4,6 @@ set -e
 
 dh_venv_install_dir='/opt/venvs/loginserver'
 
-cd $dh_venv_install_dir/bin && chmod -x loginserver_config.ini
+#cd $dh_venv_install_dir/bin && chmod -x loginserver_config.ini
 cd $dh_venv_install_dir/lib/python2.7/site-packages/static && rm __init__.py*
 cd $dh_venv_install_dir/lib/python2.7/site-packages/templates && rm __init__.py*
