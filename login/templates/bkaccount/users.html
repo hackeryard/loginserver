@@ -25,9 +25,6 @@
             <option value="" selected="">{% trans '所有用户' %}</option>
             <option value="1">{% trans '管理员' %}</option>
             <option value="0">{% trans '普通用户' %}</option>
-            <option value="2">{% trans '开发者' %}</option>
-            <option value="3">{% trans '职能化' %}</option>
-            <option value="4">{% trans '审计员' %}</option>
         </select>
         <button id="serach_user" class="btn btn-azure btn-min-w" style="margin-top:9px;height:34px">{% trans '查询' %}</button>
         <p style="display: inline-block;float:right;margin-top: 17px;">{% trans '新增用户的默认密码为：' %}<code>{{default_paasword}}</code> </p>
@@ -39,11 +36,8 @@
 	<hr style="margin-top:10px;margin-bottom:10px">
 	<div class="user_introduce_box">
         {% blocktrans trimmed %}
-	    <p><code>管理员</code>可以管理所有用户的信息，具有所有权限</p>
-	    <p><code>普通用户</code>可以管理自己的用户信息和访问 “工作台”</p>
-        <p><code>开发者</code>可以管理自己的用户信息、访问 “工作台” 和访问 “开发者中心”</p>
-        <p><code>职能化用户</code>在普通用户权限上还拥有SaaS应用 “标准运维” 的职能化权限</p>
-        <p><code>审计员</code>在普通用户权限上还拥有SaaS应用 “标准运维”和作业平台的审计权限</p>
+	    <p><code>管理员</code>可以管理所有用户的信息，具有清石智能IT管理系统的所有权限</p>
+	    <p><code>普通用户</code>可以管理自己的用户信息，具有清石智能IT管理系统普通用户的访问权限</p>
         {% endblocktrans %}
 	</div>
 </div>
