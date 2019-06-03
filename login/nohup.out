@@ -1,0 +1,689 @@
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 293, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/root/login/loginserver/login/login/local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 102, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.7/SocketServer.py", line 655, in __init__
+    self.handle()
+  File "/root/login/loginserver/login/login/local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 167, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+  File "/usr/lib/python2.7/ssl.py", line 754, in recv
+    return self.read(buflen)
+  File "/usr/lib/python2.7/ssl.py", line 641, in read
+    v = self._sslobj.read(len)
+SSLError: [SSL: SSLV3_ALERT_BAD_CERTIFICATE] sslv3 alert bad certificate (_ssl.c:1946)
+[09/May/2019 22:03:23] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[09/May/2019 22:03:24] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[09/May/2019 22:03:33] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[09/May/2019 22:16:26] "GET /accounts/get_all_user/?bk_token=YnmBW_0-Io40E2Y4-guF-h8w2wgCmi8YOSwre-yIh8A HTTP/1.1" 200 456
+[09/May/2019 22:27:13] "GET / HTTP/1.1" 302 0
+[09/May/2019 22:27:37] "GET / HTTP/1.1" 302 0
+[09/May/2019 22:27:42] "GET /?code=TjLQmnzk6Dkz7YB8YKcK0Z9Jfuo1jgWPD9OklO6tUEU.4RfaqTTage1k4O-tlM5CyZeBSZ8jJ9XCQ1F7e_mMyn4&scope=openid&state=security_token%3DDL7mXFeTUdU0Va7tEz8bQbc3HBb0is32 HTTP/1.1" 302 0
+[09/May/2019 22:27:42] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[09/May/2019 22:27:42] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[09/May/2019 22:27:42] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[09/May/2019 22:27:42] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[09/May/2019 22:27:42] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[09/May/2019 22:27:42] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[09/May/2019 22:27:42] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[09/May/2019 22:27:42] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[09/May/2019 22:27:42] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[09/May/2019 22:27:42] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:27:42] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:27:42] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[09/May/2019 22:27:42] "GET /static/img/crown.png HTTP/1.1" 200 1126
+[09/May/2019 22:27:42] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[09/May/2019 22:27:42] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:27:42] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:27:42] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:27:42] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[09/May/2019 22:27:42] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:27:42] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:27:42] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:27:42] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:27:42] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:27:42] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:27:42] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:27:43] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557412063597 HTTP/1.1" 200 4866
+[09/May/2019 22:27:43] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[09/May/2019 22:29:34] "GET /accounts/get_user/?bk_token=MypE35Az53-ZypqfTDxqRZo5mSCzWpfYrlgJmUeMCUY HTTP/1.1" 200 280
+[09/May/2019 22:30:25] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+Validating models...
+
+May 09, 2019 - 21:30:39
+Django version 1.8.11, using settings 'settings'
+Starting development server at https://bk.com:8003/
+Using SSL certificate: login.cert
+Using SSL key: login.key
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('10.10.66.197', 62342)
+----------------------------------------
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3D6G3JCQpcnsf8WI6VpPnE0YDF7pRURyjE&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3Df51ssRhv3QUny4VffevwRbMcAUVk2y7H&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3Difg3E7KGZgqUgrSeUWnccfUjVPxhI5Yv&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3Dg8ngvQyeyc9e4RBVvjiD773GEF3cgZUg&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DDL7mXFeTUdU0Va7tEz8bQbc3HBb0is32&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'TjLQmnzk6Dkz7YB8YKcK0Z9Jfuo1jgWPD9OklO6tUEU.4RfaqTTage1k4O-tlM5CyZeBSZ8jJ9XCQ1F7e_mMyn4')
+(u'+++access_token post params: ', {u'code': u'TjLQmnzk6Dkz7YB8YKcK0Z9Jfuo1jgWPD9OklO6tUEU.4RfaqTTage1k4O-tlM5CyZeBSZ8jJ9XCQ1F7e_mMyn4', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'2vXkQKOtB6lvWt7nIObfEdtmWk1YU6FhrhUGhyrHLl0.-XjgZbIpeGI4JDjpLOzQMkhUMMzYxx3CBCwh1ighoLw', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoickRSXzNNdmJzR3Q5NUFPLVBOSDhuZyIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0MTIwNTksImNobmFtZSI6IjIyMiIsImVtYWlsIjoiMjIyQDIyMi5jb20iLCJleHAiOjE1NTc0MTU2NjEsImlhdCI6MTU1NzQxMjA2MSwiaXNzIjoiaHR0cDovLzEwLjEwLjI2LjI0OjQ0NDQvIiwianRpIjoiNDI0Mjk1ZDEtYTQ2MS00YmNhLTg5NDItMzlkNDg2MTA3MjlkIiwibm9uY2UiOiIiLCJwaG9uZSI6IjIyMjIyMjIyMjIyIiwicmF0IjoxNTU3NDEyMDU3LCJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.dTtQSBgi6i0nOGrsoAPkPDc7ln9SVJc2oX2g8gVX0hmIyQ-Br2uOnomXBNlyvHk5leCMD67GThOdS4k_chIjB7ztHVVHXAVgJJw317kkCUPMpZNp_KV2A7vjyfLb_RE9Ecw3cds4sCTeaCx4nvY2WJVZ3LuG2CQkjCoRK5FEJDYowjHk2YX0MazRlTovfcGjnxRXWn4XAHsp8q3yMWbRrJT6Sz4O6clAuEk2rONlloiOcXxXWBGgDN35AdP8mpdwjkAhnLPqGow-NJbiE4IvP163djvDoDCIo7wOTGtqQ4gm1yINA9z7ICHGeGM3pP6nzTI9eakpQ8_nLsHTZ4uO4nPBA4rHApS_4TWjrhRuHdViO8l7RYq7H5xSnX_H001NQXXW7Navv3jMCRACxmFRJw8OMsPeOUbCP7L4qEn1QE8pbMBCyyODV1b06eTG3Sw36t0815GeYHDh7GKMYw1jUgkjz0UFfWBPaaNreWqy2gjpTgIeQXWU7Dae5JloB7OLSInuWxkAyZ-oNMpHrgvMAjt1RApR6eL03bvSsvbWrtenbaoYGpAs6eCJGQPv_jhFRLMEAE04G5u-8CbLBNEnUqHoVTXtRqHPvv-uwk5OhdpzoYNNEdSUvkaTyIWZPIlPw7adhxj__2YwPzpj3bGljTJBXfZAtEA86INfSnqEdTU', u'expires_in': 3600, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DWmyLwcUepXMrA8WEIcW60HLuGkpg7Rjg&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'9qJIabO7fpGPWLckJ7SesKhiSKZq1IYweerawDEwA0w.gxiYWJJz9T38aJMvu1vj0eb0N1Wv0Uro[09/May/2019 22:31:00] "GET /?code=9qJIabO7fpGPWLckJ7SesKhiSKZq1IYweerawDEwA0w.gxiYWJJz9T38aJMvu1vj0eb0N1Wv0UrofLQ4DjGynz0&scope=&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DWmyLwcUepXMrA8WEIcW60HLuGkpg7Rjg HTTP/1.1" 302 0
+[09/May/2019 22:31:00] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[09/May/2019 22:31:00] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[09/May/2019 22:31:00] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[09/May/2019 22:31:00] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[09/May/2019 22:31:00] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[09/May/2019 22:31:00] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[09/May/2019 22:31:00] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[09/May/2019 22:31:00] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:31:00] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[09/May/2019 22:31:00] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:31:00] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:31:00] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:31:00] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:31:00] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:31:00] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[09/May/2019 22:31:00] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[09/May/2019 22:31:00] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[09/May/2019 22:31:00] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[09/May/2019 22:31:00] "GET /static/img/crown.png HTTP/1.1" 200 1126
+[09/May/2019 22:31:00] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557412262048 HTTP/1.1" 200 4866
+[09/May/2019 22:31:00] "GET /static/favicon.ico HTTP/1.1" 200 1150
+[09/May/2019 22:31:00] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[09/May/2019 22:31:19] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[09/May/2019 22:31:20] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[09/May/2019 22:31:20] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:31:20] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557412281497 HTTP/1.1" 200 4866
+[09/May/2019 22:31:23] "GET /?code=yTervqBxICLbq8d7PP4MMH-nZB50tu6_ke23akmFU48.eSfJi86q8b6KQrRY8ZgqcQQSNk-sPlWErPMk8NRgBHE&scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DYU8V3Kub0JB2mLScJDKJVjrzih1uW7aG HTTP/1.1" 302 0
+[09/May/2019 22:31:23] "GET / HTTP/1.1" 302 0
+[09/May/2019 22:31:23] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[09/May/2019 22:31:23] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[09/May/2019 22:31:23] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[09/May/2019 22:31:23] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[09/May/2019 22:31:23] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[09/May/2019 22:31:23] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[09/May/2019 22:31:23] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[09/May/2019 22:31:23] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[09/May/2019 22:31:23] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[09/May/2019 22:31:23] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:31:23] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[09/May/2019 22:31:23] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:31:23] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:31:23] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:31:23] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:31:23] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:31:23] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:31:23] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[09/May/2019 22:31:23] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:31:23] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:31:23] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:31:23] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:31:23] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:31:23] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[09/May/2019 22:31:24] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557412284660 HTTP/1.1" 200 4866
+[09/May/2019 22:31:24] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+fLQ4DjGynz0')
+(u'+++access_token post params: ', {u'code': u'9qJIabO7fpGPWLckJ7SesKhiSKZq1IYweerawDEwA0w.gxiYWJJz9T38aJMvu1vj0eb0N1Wv0UrofLQ4DjGynz0', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'mWLSG8XoRcxpASQvwy1hAcWqTKof27Dpif0ZxRxzWjc.-oB7SFE2UI55q_0CAkFd3G9gfPG6uKeYxqEgGTR6wXo', u'scope': u'', u'expires_in': 3600, u'token_type': u'bearer'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DYU8V3Kub0JB2mLScJDKJVjrzih1uW7aG&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'yTervqBxICLbq8d7PP4MMH-nZB50tu6_ke23akmFU48.eSfJi86q8b6KQrRY8ZgqcQQSNk-sPlWErPMk8NRgBHE')
+(u'+++access_token post params: ', {u'code': u'yTervqBxICLbq8d7PP4MMH-nZB50tu6_ke23akmFU48.eSfJi86q8b6KQrRY8ZgqcQQSNk-sPlWErPMk8NRgBHE', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'X3rupxunXA7Ti_r_KgDGduxRZ54Evg7fyqnpbClePWc.ABJo9Os6sEa1cDFni1-Y1iP4v64ttDTg8nw2NsrURZ4', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiSVRQbjBkcXFqYmpQWks2RjkybnR5QSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0MTIyODAsImNobmFtZSI6IjIyMiIsImVtYWlsIjoiMjIyQDIyMi5jb20iLCJleHAiOjE1NTc0MTU4ODIsImlhdCI6MTU1NzQxMjI4MiwiaXNzIjoiaHR0cDovLzEwLjEwLjI2LjI0OjQ0NDQvIiwianRpIjoiODFlNDk5MDItMmVmYy00MjU5LWFkMjItMjQ4OGIzYmI2NmM1Iiwibm9uY2UiOiIiLCJwaG9uZSI6IjIyMjIyMjIyMjIyIiwicmF0IjoxNTU3NDEyMjc5LCJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.DUxeD2_hQTGAv0XYgVZnf51TS5453lasasQvmZCXhTIs-c7hSBy0xqoexmH04mkud8c8nB5USmYxcIn6IqCHiJ2H2vHTzbuJgSm5Y1-rbE0wmMy-RPFqHufAlPGPO8LhtwVQzZlDzIUOXjukPQM1_Y7jxi3bvD8aXmYckgCASkVhZDmduIHdWFu----fEHY9ljpp-p1McOHnccWE-zrz11Ptrh9XnTHEhv3BSe9btI4H4bXTdZ7M9ftIIOQgGzo7WOcTjOcufaYrDuGgs9mXmt-cm-fP6Lh2LVL3Bj0IGwMHGNEy975XHB6bICA2qcx8Fj4e3OrqIYOFrjE5LT-K2YE9n6b_eXck8LlDmigtUdzK9ivaM-VD8cID2LAJHnkaN9E0EcANYEv7K63hmjF7Jz6EX3byf5bHi11ZBBGuTDs8RjkYKAWyVgqjACNot3ou41a0S7zEF8TdaL7SVgeTX2uyTBaujNre5cyJxhYtk6QrTfKmHL0yIGDy9xsZ8GnS-CkyUgUpdqfUt5ARO4H0otohNkqm6gTovatlCH9OyYnCZLP_qqqZ8mOmJArVXUh5uGsjWqJ_DDaEgsFeovWOMkjFHjyJMDC5m9qUp5NL1geU92gknmzswbB_ocjjQjSKDqfNtwghzgQ0q8mF5hZCzSXheacahgQIaes9Pl06Sro', u'expires_in': 3600, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DRJcc6TEfaJkEYE28mJ1EJDqHBd7v8EYe&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'E6w5R0VVz0iiV0Ku6ljHXsENr7Tdpl2vhThqajbd888.BxWUQ891W3mfI1mnGwMS1kfNC-b5DANccdQX1H_gJWE')
+(u'+++access_token post params: ', {u'code': u'E6w5R0VVz0iiV0Ku6ljHXsENr7Tdpl2vhThqajbd888.BxWUQ891W3mfI1mnGwMS1kfNC-b5DANccdQX1H_gJWE', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'wKttU0wS_SkaYkZm8576dkqTvFyNCiZOHY-O4qcyrQA.riFCpYB_MTquy1VLWmhl9fpnL44R_GRiz6G5aQbi85E', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiUDZQcTg4MGlmNEhodi0tenU0M0lXUSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NT[09/May/2019 22:31:30] "GET /?code=E6w5R0VVz0iiV0Ku6ljHXsENr7Tdpl2vhThqajbd888.BxWUQ891W3mfI1mnGwMS1kfNC-b5DANccdQX1H_gJWE&scope=openid&state=security_token%3DRJcc6TEfaJkEYE28mJ1EJDqHBd7v8EYe HTTP/1.1" 302 0
+[09/May/2019 22:31:30] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[09/May/2019 22:31:30] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:31:30] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557412291985 HTTP/1.1" 200 4866
+[09/May/2019 22:31:33] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557412294318 HTTP/1.1" 200 4866
+[09/May/2019 22:31:57] "GET /accounts/get_user/?bk_token=utGh1WkljejexeDsLg5ilWmk4nUIgkfCImblaCjq03E HTTP/1.1" 200 280
+[09/May/2019 22:32:05] "GET /accounts/get_user/?bk_token=n1MiA5VCHON2URUm7v5EiftCj2Vy5xnLa1a44jAdLGY HTTP/1.1" 200 280
+[09/May/2019 22:32:14] "GET /accounts/get_user/?bk_token=n1MiA5VCHON2URUm7v5EiftCj2Vy5xnLa1a44jAdLGY HTTP/1.1" 200 280
+[09/May/2019 22:32:19] "GET /accounts/get_user/?bk_token=n1MiA5VCHON2URUm7v5EiftCj2Vy5xnLa1a44jAdLGY HTTP/1.1" 200 280
+[09/May/2019 22:32:58] "GET /accounts/get_user/?bk_token=n1MiA5VCHON2URUm7v5EiftCj2Vy5xnLa1a44jAdLGY HTTP/1.1" 200 280
+[09/May/2019 22:34:12] "GET /accounts/get_user/?bk_token=utGh1WkljejexeDsLg5ilWmk4nUIgkfCImblaCjq03E HTTP/1.1" 200 280
+[09/May/2019 22:34:12] "GET /accounts/get_user/?bk_token=utGh1WkljejexeDsLg5ilWmk4nUIgkfCImblaCjq03E HTTP/1.1" 200 280
+[09/May/2019 22:47:09] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[09/May/2019 22:47:13] "GET /?code=pfy9BVYj4qRgf8fkRZSCI7fio1ypUDODa0KDJKs0Nj8.aVHFxaqNp5njkoljNZDjw3a2HKNgXcdH6uOSNsyjXhw&scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DJH5I1Sim4rcvgHIDgtLTYhc1R8WBENL2 HTTP/1.1" 302 0
+[09/May/2019 22:47:13] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[09/May/2019 22:47:13] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[09/May/2019 22:47:13] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[09/May/2019 22:47:13] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[09/May/2019 22:47:13] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[09/May/2019 22:47:13] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[09/May/2019 22:47:13] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[09/May/2019 22:47:13] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[09/May/2019 22:47:13] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[09/May/2019 22:47:14] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:47:14] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[09/May/2019 22:47:14] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:47:14] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:47:14] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:47:14] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:47:14] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:47:14] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[09/May/2019 22:47:14] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:47:14] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:47:14] "GET /static/img/crown.png HTTP/1.1" 200 1126
+[09/May/2019 22:47:14] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:47:14] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:47:14] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:47:14] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:47:14] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[09/May/2019 22:47:14] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557413235040 HTTP/1.1" 200 4866
+[09/May/2019 22:47:14] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[09/May/2019 22:47:29] "GET /accounts/get_user/?bk_token=c4lU2ty6AyRvw-grBInwLR3FDtm6JNd-fA9ToQ5kmk8 HTTP/1.1" 200 280
+[09/May/2019 22:47:38] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+c0MTIyNTMsImNobmFtZSI6IjIyMiIsImVtYWlsIjoiMjIyQDIyMi5jb20iLCJleHAiOjE1NTc0MTU4ODksImlhdCI6MTU1NzQxMjI4OSwiaXNzIjoiaHR0cDovLzEwLjEwLjI2LjI0OjQ0NDQvIiwianRpIjoiYmY1YjU3YWItZjVmNi00MTI2LWJmMjktMGVkNzU2NzU5OGEyIiwibm9uY2UiOiIiLCJwaG9uZSI6IjIyMjIyMjIyMjIyIiwicmF0IjoxNTU3NDEyMjgzLCJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.OkaI9L6RzkvfaVV_jiP1qhNIPogG0kIb4zW9ki7QYSCz2L-c6lle33gR7ctsMHd9NRjsk0gjOUgudlsXXqGvkpqYL0_g4Y9g-Tvfi8aYtpL9owQLXS3ZdM6B94ejnwu3JH-EkvIWMy5VFuvf1y9UkKzpoL7O3CY3Pc_xqUSrBaBBCnfhQLducJ7IuRPiOiUTPPOFm2gOG-lHFwebsW3on64TNBytcOjeA7H1f7dZ3RNksRIr3YXtke8458I22W4HwrVbky0Y-WN4TLuqmmf2g2X7hXnOdGBY8LYTyaZCLI2SgF8_QyAEX9dqxxN1ueQ1uAOwIj_hOpL70JTg0vrBUfBqA6pFAXM6R6NTJJ0Rujtwrl0uTYLcvWi8MnE0pKWH464CAgTPZWYHLPi_B8zM834_Z2o_3Y-Qh_odNf2oUXHTbV6OpFUZVjSM6nW023JBfwswl33j1IR-1C76xXGlV6IpXa1bzRTop45oex00uJqtxJ5yD_sO5niEfYVMeNnD_PqAE9XpDXVWwAwY26wpPXVAb9Z3yS91DVhggFvQf-2NE370-Job26EUk_WELFe8cxbc9274vH0aYznA2NIEFR2Xub2IsKk2Yp10NS54CAi1KLJa6LlZjQCu6gaE_2bOnE6rc9KwCLuTpSOKlQ38prnN5kypC2hSIl2kWUVFquc', u'expires_in': 3600, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DJH5I1Sim4rcvgHIDgtLTYhc1R8WBENL2&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'pfy9BVYj4qRgf8fkRZSCI7fio1ypUDODa0KDJKs0Nj8.aVHFxaqNp5njkoljNZDjw3a2HKNgXcdH6uOSNsyjXhw')
+(u'+++access_token post params: ', {u'code': u'pfy9BVYj4qRgf8fkRZSCI7fio1ypUDODa0KDJKs0Nj8.aVHFxaqNp5njkoljNZDjw3a2HKNgXcdH6uOSNsyjXhw', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'CKIw4_yXcS3JWK-1DksuS7uybDifsZlwSFtkB7e4LCM.uoNh-y_cK8oJgIreSoOq_W_aQ_KNW0Qwj1MX1BmScL8', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiNGV0MWlqOF9mTklwbFRUYjVfdldlUSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0MTMyMzEsImNobmFtZSI6IjIyMiIsImVtYWlsIjoiMjIyQDIyMi5jb20iLCJleHAiOjE1NTc0MTY4MzMsImlhdCI6MTU1NzQxMzIzMywiaXNzIjoiaHR0cDovLzEwLjEwLjI2LjI0OjQ0NDQvIiwianRpIjoiZmU1ZDAzMDEtZGM4OS00ZDE1LTk0NzgtNTE5M2QwNmFhZDUxIiwibm9uY2UiOiIiLCJwaG9uZSI6IjIyMjIyMjIyMjIyIiwicmF0IjoxNTU3NDEzMjI5LCJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.ndPHrA0HrV7JeCZd2nHIJ3uuLiNyCBS-58miHBH0FBrHMbIi_or9Y9frIhC7vrXQYtS3bcSYCPex6CuetnrDZfvUvSxjvpHTzprPBwgPsXWlt7VwhM7yaUP79NeDAU9GhKMmy-W6mmaNS2UCwft3u8PPtkkkXeJmK4ofeNcTgvGblJ97XeNeUoaZgElOETnSojJFXze84oazS2I5xfgBpMJUhbigVr1xyscz5a5BAbLY17aUYFvcZ6WJuwYk8CG0sV0qjBfIrwipnlNt9SfijpfvjlKeeAmYP9GTERb6beVxXdyxtff7nRQxwbuYMBp8jGPrsCKaI0ADsXl0zimJGWqHBFpjWlRBUBrEK4tummJObF0nlGEvEExHlrvrZeup27-AKR6MZ7K3gHxtwh26cRkIOX08_Ey4A9kPNnvyoPg1XJ2x2GAyNeMNFM9PRe6aAU2L5FEDkDHUlLJPcDzEavZPxFqS72K7RAzU959EJq_4Nr3Nff-jGfHzgWwpcgzVbBscMCsEi1fm-JEVBQsr2s8Ry_Xyp-HWM60TdzGJ5qxzzT9THcInvlqkZKjNKwdXcFCEQkAZQ2peVHHezoTBtZK5ukDEVK-K0IHkZIB7kbNhCWsWkUpqJ-yj0xAYFEsrPpT1xSdpTqDR9-G0nDKJeukNgQ5KqoHQOJdAzgM17zM', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3D3t1p1zgpbLckxIbywIzsJCx4u0iDFxID&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'_EbUJsGW4MEeW8fCri8eWHkraWB4HfTmX0dIjxYFt8U.0NYwOI7Wrgnr0keUpK7025RcVmTpXcXMEMmSSlPUOzw')
+(u'+++access_token post params: ', {u'[09/May/2019 22:47:44] "GET /?code=_EbUJsGW4MEeW8fCri8eWHkraWB4HfTmX0dIjxYFt8U.0NYwOI7Wrgnr0keUpK7025RcVmTpXcXMEMmSSlPUOzw&scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3D3t1p1zgpbLckxIbywIzsJCx4u0iDFxID HTTP/1.1" 302 0
+[09/May/2019 22:47:44] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[09/May/2019 22:47:44] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[09/May/2019 22:47:44] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[09/May/2019 22:47:44] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[09/May/2019 22:47:44] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[09/May/2019 22:47:44] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[09/May/2019 22:47:44] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[09/May/2019 22:47:44] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[09/May/2019 22:47:44] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[09/May/2019 22:47:45] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:47:45] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[09/May/2019 22:47:45] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[09/May/2019 22:47:45] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:47:45] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:47:45] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:47:45] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:47:45] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:47:45] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[09/May/2019 22:47:45] "GET /static/img/crown.png HTTP/1.1" 200 1126
+[09/May/2019 22:47:45] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[09/May/2019 22:47:45] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[09/May/2019 22:47:45] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[09/May/2019 22:47:45] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[09/May/2019 22:47:45] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[09/May/2019 22:47:45] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[09/May/2019 22:47:45] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557413266067 HTTP/1.1" 200 4866
+[09/May/2019 22:47:45] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[10/May/2019 09:09:42] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[10/May/2019 09:09:48] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[10/May/2019 09:27:15] "GET /accounts/get_user/?bk_token=3sqJczsFNXQ9TPzyFMnI2--YSJMrJyvnqkBsxrt72qQ HTTP/1.1" 200 280
+[10/May/2019 09:27:23] "GET / HTTP/1.1" 302 0
+code': u'_EbUJsGW4MEeW8fCri8eWHkraWB4HfTmX0dIjxYFt8U.0NYwOI7Wrgnr0keUpK7025RcVmTpXcXMEMmSSlPUOzw', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'8pY8HOzWrjjg91AsI2MOtjj1Snsv9Ae_YnOh_KAzCoY.AzyBziih-GbflO4UyAnyNJYtAX2lxNiXPiUgCQ8RkT0', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiUTR4ZHQzRWdsUFhhd0RYZVBNSl9DZyIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0MTMyNjEsImNobmFtZSI6IjIyMiIsImVtYWlsIjoiMjIyQDIyMi5jb20iLCJleHAiOjE1NTc0MTY4NjQsImlhdCI6MTU1NzQxMzI2NCwiaXNzIjoiaHR0cDovLzEwLjEwLjI2LjI0OjQ0NDQvIiwianRpIjoiMDdlNTg1MmYtNGJkZS00MGQzLWJiN2ItZWNmNzI3YjY0OWY4Iiwibm9uY2UiOiIiLCJwaG9uZSI6IjIyMjIyMjIyMjIyIiwicmF0IjoxNTU3NDEzMjU4LCJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.ymbNwDQ_rO-AS0Gdb_7Ifo-r1te4lRrmivgsOvibflEBMm6rO6FPttc3S7suhTvvniFIVW02KK7hAp3G4kD-ORYKmkjaUTeDW7KTOUupB_n59_nBhVwwKjJtJuwoAz_TQ4LlAdt8y5mHv5P-rFcWwq_E-XhFwsaCI2WFSNMjvrKUiI_kqcHprTedHlR22MI-mMupiKhiWdoxkwrRqYcSaFQa3onihxZrYyhLTYkNfzlH9RcuzL0jjMytw0RBmcAZGFC0b8hy-k-TLIHXgrjgxEEn1QF-NhnBjBUM1OLsyFr_Mv-pTVY0rDoOfDTJRNHPVQ2WOneGAAUy_LMePPyfCuqSfDMmqSJvMLFKIRu0g1geiF57Oni1eWHaO4YZsoX0KXLEBgx08DcCVStn180F8WJmgpskuVbZsIz0lZDr5RJ8CObzxk8e9-IFqSyw6jyeN1gf4KR_m7b_AhkvUWQHycS_aB4ATQ_CeNA628PdChBoJ6b29GlbR6tbeaBrS5M-68D2Vd1JuonnRtkQpiKpnfMfZtmXtVDmf33Ck6ESpVtAIc_ARJbkRxmep2oRofakU2qMKs4n0j_jjyXJATBeumNLRudo8OhnzMfdmyo1nTEkKGU7ak5We48Cb9WyIAmWlagpCX2nOuOqiCsk3d93tf4uHFtDNNU5lD_w93dV6Qw', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DgYK7zN93Gpt8Tje1Z88vMwM1qA1qdzkt&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DBRd0fc3TZz6YEdUzcKV6ZwuZv0trw7zf&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3D16KbiTq5j8hsVL4XHd3JFGmTi19giUDQ&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'E7uR6dvzsg8FK-w9lqd8wPCrdLw6I8ycSynyYb6VF38.uxaW_H0gPSULoQFllEAGW4vhlmh5SOcBcrsuhIR6K34')
+(u'+++access_token post params: ', {u'code': u'E7uR6dvzsg8FK-w9lqd8wPCrdLw6I8ycSynyYb6VF38.uxaW_H0gPSULoQFllEAGW4vhlmh5SOcBcrsuhIR6K34', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'CFV5va9Do_A1iTJNF2TZkoh-AXqnik2-f2rGClnRTOs.uXd1-UseF803Rc-MicnEbvqqjXipMIoHPWrp-rytqT8', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiUVVoM3FMVm5ESFpmbFZtSnlXcEhiZyIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NTIxMTMsImNobmFtZSI6IjIyMiIsImVtYWlsIjoiMjIyQDIyMi5jb20iLCJleHAiOjE1NTc0NTU3MTYsImlhdCI6MTU1NzQ1MjExNiwiaXNzIjoiaHR0cDovLzEwLjEwLjI2LjI0OjQ0NDQvIiwianRpIjoiYmYyZGU5MGMtOTc1MS00Mzg0LTgwMzYtMWYwMmE1OGM1MTg3Iiwibm9uY2UiOiIiLCJwaG9uZSI6IjIyMjIyMjIyMjIyIiwicmF0IjoxNTU3NDUxNjQzLCJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.o9y1RkdCFmREU30BXNSM0CDarO7snbd-MdrwXR-Wwt-NQ9SFApkNyU0m1nXG1kTg8v4x7jRobC-qmxUyw8pnsh46sFYqzT4d4aYtaIXmDYaeKKcH2sGq5WB4LBQltcBen5I_brKrxDDd1isRVDpjPeA4PCxNqlUE64hkyuYC_HfjJd5Kr3aCmXbe6E20qGIwVv110UxwEjhJUh2q79sSnsWTXyjwC_O7Tw18gFdnHkWZT2obHlf18wiJTPGTL98qpAMSgbLiBT2K_1ts9JxFB3jSTRDgc2MSUaWDRTQYxR0KG7StLa2Foe3[10/May/2019 09:35:16] "GET /?code=E7uR6dvzsg8FK-w9lqd8wPCrdLw6I8ycSynyYb6VF38.uxaW_H0gPSULoQFllEAGW4vhlmh5SOcBcrsuhIR6K34&scope=openid&state=security_token%3D16KbiTq5j8hsVL4XHd3JFGmTi19giUDQ HTTP/1.1" 302 0
+[10/May/2019 09:35:16] "GET /accounts/user/list/ HTTP/1.1" 200 12939
+[10/May/2019 09:35:17] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[10/May/2019 09:35:17] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[10/May/2019 09:35:17] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[10/May/2019 09:35:17] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[10/May/2019 09:35:17] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[10/May/2019 09:35:17] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[10/May/2019 09:35:17] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[10/May/2019 09:35:17] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[10/May/2019 09:35:17] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:35:17] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[10/May/2019 09:35:17] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:35:17] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:35:17] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:35:17] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:35:17] "GET /static/img/crown.png HTTP/1.1" 200 1126
+[10/May/2019 09:35:17] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:35:17] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:35:17] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:35:17] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[10/May/2019 09:35:17] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:35:17] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:35:17] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:35:17] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:35:17] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[10/May/2019 09:35:17] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557452118048 HTTP/1.1" 200 4866
+[10/May/2019 09:35:17] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[10/May/2019 09:35:21] "GET /logout/ HTTP/1.1" 302 0
+[10/May/2019 09:35:21] "GET /?is_from_logout=1 HTTP/1.1" 302 0
+[10/May/2019 09:42:17] "GET /?error=request_forbidden&error_debug=The+CSRF+value+from+the+token+does+not+match+the+CSRF+value+from+the+data+store&error_description=The+request+is+not+allowed&error_hint=You+are+not+allowed+to+perform+this+action.&state=security_token%3DFdwQxrKTYqZIwXiK9kdTLJENHquUvJsv HTTP/1.1" 302 0
+[10/May/2019 09:42:22] "GET /?code=5NxSxokvosp7cdxFTw53rriBcl0WKIkZ1a6KAfcxxGA.q3sBdlv6QqaCMQ-TICMtg4wKYCstmiswEzaNNP6ajaE&scope=openid&state=security_token%3Dy7jeyNIpHZcaWaPzgbznG6Lj0GsFLsvH HTTP/1.1" 302 0
+[10/May/2019 09:42:23] "GET /accounts/user/list/ HTTP/1.1" 200 12361
+[10/May/2019 09:42:23] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[10/May/2019 09:42:23] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[10/May/2019 09:42:23] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[10/May/2019 09:42:23] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[10/May/2019 09:42:23] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[10/May/2019 09:42:23] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[10/May/2019 09:42:23] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[10/May/2019 09:42:23] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[10/May/2019 09:42:23] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:42:23] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[10/May/2019 09:42:23] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:42:23] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:42:23] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:42:23] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:42:23] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:42:23] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:42:23] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:42:23] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:42:23] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:42:23] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:42:23] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:42:23] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[10/May/2019 09:42:23] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557452544229 HTTP/1.1" 200 2824
+[10/May/2019 09:42:23] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[10/May/2019 09:42:24] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[10/May/2019 09:42:25] "GET /logout/ HTTP/1.1" 302 0
+[10/May/2019 09:42:25] "GET /?is_from_logout=1 HTTP/1.1" 302 0
+[10/May/2019 09:42:31] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[10/May/2019 09:42:35] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+9VVYF4M2OL7Ve70IfhbHePTgZ5BgsIenvCgkFg-rN95_IWQjoXk7fYm18BrAOHrlEP_Sr3FwKXBdPMm9rHhtzrY5vWmd3DKnAqI_2R7BK2Nhj03_tpxYgRDvc1ZokAOR1enTlFTCmDgNQ4noErLss6wg7BEWTi22V2WwuxLQLDhYFmC6ZiwGHJxT2qA7B10ZYRdRKuklBlZST8yXCKPup-jLvGXqPUTcZdYDtL2o8WK-rtrKjppO6MX6ZIXRDjFntUJBUQBS_gZ6DqoNcxkShyWqgb4OvT_56NOsbbVNZXY3ubJsLgWos0K9ik2yq4piEZIp3VJNTnBiiqu-de3e581Kc_Pzmmi9pBboIv_a5VnN1aa567Gw', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DFdwQxrKTYqZIwXiK9kdTLJENHquUvJsv&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3Dy7jeyNIpHZcaWaPzgbznG6Lj0GsFLsvH&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'5NxSxokvosp7cdxFTw53rriBcl0WKIkZ1a6KAfcxxGA.q3sBdlv6QqaCMQ-TICMtg4wKYCstmiswEzaNNP6ajaE')
+(u'+++access_token post params: ', {u'code': u'5NxSxokvosp7cdxFTw53rriBcl0WKIkZ1a6KAfcxxGA.q3sBdlv6QqaCMQ-TICMtg4wKYCstmiswEzaNNP6ajaE', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'LhUem0xIzrjvZ4_HjlAYqCUMxXzQsj_1JoNbjiTAuHA.aVQ6V9knbhoXqjJligKh80OT3wqAFVJTSMOOfzT0rDY', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiMEJVUjBpMFhsZUYwMHZtVFYwWXlsUSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NTI1MzksImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ1NjE0MiwiaWF0IjoxNTU3NDUyNTQyLCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiJhZjVhZDYzMi05ZWFiLTQ1ZjktOTgzNS00OTNkNTNhMTc0NjYiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NTI1MzcsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.cRGnz5VgrP5cRCm91zsOh0Wi0G0ovVA60yUF9LS7kwm6Ydm0ciGoLlt780IZbjGdkjkqWOtpAxZ_wVXj_RoaEAU16TLvLdyrTlD7AfjIwUm5Mq8Ov1wJRXtAR_AK_2sRn0CAYkGyH1OrLa4oisyA_IpO5dl0_RB8xGM9eMsn4D-HnjESLTv4SQ_sn01aEpajRg6DGx-3oooPqqyoY645hzu9z9_DSjTF9XtHtJ5He1q2i1g4I3IWe0xrB2vOj_GKNe7HR5_EWy7dmIEmhlS4zjqmQt8hPyyPKhP35108tu9SBeiZ9ZMnZeOKD_xp4fZhhijYEaW42EVkELRAi99JxPLQEGl-Ojfr2m-79jML2mag-nC6GDDgOpOxMGVs1Fihx1MgrVRbhLItkyTzAy-EFUm4E_AgXYkec1HJ_3I9CugeuizdJ2XlCIZfOOSRphz6sLaOO6uoD__gPNv2wkyNU4R_pwy5Dom4WFp_3hxGFexNoHpVnqz_G4Ifp8GUy0GTQsJDM437rHYSu1vlS_YLE7YbIQeioEfJZHYygKRmHe0z9-M6zRgP2o4_FAv2XMZhA3Jg93nEVoOwiZIDU6_GhSKGDkc1DRmGgLydJhrmSPTdRRrZZeDKN7E8IL7WGXP6RccQJEhvD2FviRtOJdquH952YlKPS_4lk9pHBMgmEu4', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DG4jRFwiFVVjIRNqZMjGwLGmPd8MrEG6k&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DXCGHDftHPhthJt7g2EqxwcuA9Btc9eSm&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DQSgZy8SGU3VdCCBnQ7a2j2CCgG61hdAX&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'2CNt-wi45BZSGx5cPcROVWUDYkpzW2wgHZhdrQrjPBE.X5P8yCzJp5N4SZYjJ[10/May/2019 09:42:39] "GET /?code=2CNt-wi45BZSGx5cPcROVWUDYkpzW2wgHZhdrQrjPBE.X5P8yCzJp5N4SZYjJZ4dYmAjH3k-_uDD-8qqxkk02d0&scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DQSgZy8SGU3VdCCBnQ7a2j2CCgG61hdAX HTTP/1.1" 302 0
+[10/May/2019 09:42:39] "GET /accounts/user/list/ HTTP/1.1" 200 12361
+[10/May/2019 09:42:39] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[10/May/2019 09:42:39] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[10/May/2019 09:42:39] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[10/May/2019 09:42:39] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[10/May/2019 09:42:39] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[10/May/2019 09:42:39] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[10/May/2019 09:42:39] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[10/May/2019 09:42:39] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[10/May/2019 09:42:40] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:42:40] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:42:40] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:42:40] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[10/May/2019 09:42:40] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:42:40] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:42:40] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:42:40] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:42:40] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[10/May/2019 09:42:40] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:42:40] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:42:40] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:42:40] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:42:40] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:42:40] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557452560892 HTTP/1.1" 200 2824
+[10/May/2019 09:42:40] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[10/May/2019 09:42:40] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[10/May/2019 09:42:45] "GET /logout/ HTTP/1.1" 302 0
+[10/May/2019 09:42:45] "GET /?is_from_logout=1 HTTP/1.1" 302 0
+[10/May/2019 09:43:00] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+Z4dYmAjH3k-_uDD-8qqxkk02d0')
+(u'+++access_token post params: ', {u'code': u'2CNt-wi45BZSGx5cPcROVWUDYkpzW2wgHZhdrQrjPBE.X5P8yCzJp5N4SZYjJZ4dYmAjH3k-_uDD-8qqxkk02d0', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'MyMmD_lPSiAsfvdkeuffDs2hGyo2vX0mtuYzQcB4SWo.VgVKOq_HnOe3uRpQ5IjA-cPMq-zxzA8GqUycy4NL7C8', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiSTQ2clgzd2xCLVVTSi1yZTFaaDRfQSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NTI1NTcsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ1NjE1OSwiaWF0IjoxNTU3NDUyNTU5LCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiI4NmJlNWY3Ni04OTFmLTQwOWEtYTdkZS00MTZjNDQwOWNiNTAiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NTI1NTUsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.ggwBclMbNxOpWR2LfMkLZElrr92CLiHX83ariLZltfoeuv_NysET1reXUD8HZYNAh8GLJ7c2GvK8mmrrBGWcHJAIh__qo_I47ZUjP7o_yvR2JNK97dFDqFDRB0TEQEBAgtkT--53WKVnYbUGaENn9YN6pCvgLT15Pi9rb1TC6Qd01pEI1v2e-Keg4POyAZKyzoYRXn_lo0tmhlOl1bTR8Jopdis3LD_rRFnP0oUyqJkkDcPCbyN2t2rbhNRAq0LXiGFkUVVgb3VcmIAmzLmoowUGjlArjFVPBHAkU1pdo5d_D2lAD0wKGywa5mDRYDj-HAste4cISTUtJUkW-LOOqfpg5vYnEExxuvFJsSEX-igBVg1z5PJsd3KPv-ACtVEqK6DfG97OgKDWp0K-mJM3p-1TOaphvSJhoRymZGm-uIrpnuUTuI-BV5VOozm0khFq5D8JHpjvsw1LRTpd_mcPc3xeaukwacb9P0pVD1kzYzoAeiOp5kqoYwyhZghS8B2EnUejzb4In6n8Uc2DhMD3dIurokBemcSCy_s4I8cIdi1kCHABQuG8TYsd3SVD5UWYpAVB8m_iwLHBAzfapp0sDc7L6bqiDeQqvbJ9UZdIYl3kjG_oFaO3_Gt3ZMCojtpGsdbn0YLYWOhUIE5DGEAhDlfJR_WbgHsDCEZVeaYG3qE', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3Dbp8cYjLLPkvqUz46Qcmt88jtsJUMNBLI&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3D2By6nEi48Q9V0E79zYWfvJQwnnJJUG7y&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'ajme8_c2NOynB82aYCpubnAk8kdAaTUTpZ2-pewDLeY.KkQ-hQDp4BdUYiqJB8k66dZ6ldLCUIQCQ6b5F3V_Lto')
+(u'+++access_token post params: ', {u'code': u'ajme8_c2NOynB82aYCpubnAk8kdAaTUTpZ2-pewDLeY.KkQ-hQDp4BdUYiqJB8k66dZ6ldLCUIQCQ6b5F3V_Lto', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'D4RTw3GuFg_bryW_vR24LX-WzZl4_2G0F0s89sDK4ec.wZh74Q4vUSkM1PhWvp1-LK-UUXU67Y6OJaSxc5JKtT0', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiSnNXRUsxSVN1VHJIMGlkLU9HY1hqZyIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NTI1ODIsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ1NjE4NCwiaWF0IjoxNTU3NDUyNTg0LCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiJkYzJmZjc5ZS00MzhmLTQ2ZGEtYTcwYS1iNzBkMWFjOTQyM2UiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NTI1ODAsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.WBMZNWBlY5xeOJ2YzLO1674LtALMy8CIV-M9zrDFiv3LKLsumm_bgu3ESAfTdZ0a_IPEE435T6nFZnsI2m4_8YTD08A8Byu_x9BFIy4bmKriVYNUUg6fdL5d0j3ToIbtg09sEUpatavLlFENcTB-2Y2zv5TmXfU-JiXVvinffAbrKgz1hJIl-kW5gHLNJjWxMrH2ATCgpbP0bkJ1QQN2bbp4_LCOu6bZVTAQiobNt0WT6D5qHtLSKsvWJetqODq2IJgzEGrnKk5l0chA61ERLfr4gkfAowpCP7dJMomWk9QE0eZV89OLOssHcarqHup6FkMC1mIUiFhu5lBawU5-kGiS8raO73BLF_4ilLWJ3O6t92ftCHRYX_kV6OzDqZoh9Z1eiOraXr5SZNtWq2skYnXC1_1_3s45xjYShBB2TTS1fWij-5nrKIdkNoNBS3nV[10/May/2019 09:43:04] "GET /?code=ajme8_c2NOynB82aYCpubnAk8kdAaTUTpZ2-pewDLeY.KkQ-hQDp4BdUYiqJB8k66dZ6ldLCUIQCQ6b5F3V_Lto&scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3D2By6nEi48Q9V0E79zYWfvJQwnnJJUG7y HTTP/1.1" 302 0
+[10/May/2019 09:43:05] "GET /accounts/user/list/ HTTP/1.1" 200 12361
+[10/May/2019 09:43:05] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[10/May/2019 09:43:05] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[10/May/2019 09:43:05] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[10/May/2019 09:43:05] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[10/May/2019 09:43:05] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[10/May/2019 09:43:05] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[10/May/2019 09:43:05] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[10/May/2019 09:43:05] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[10/May/2019 09:43:05] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:43:05] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[10/May/2019 09:43:05] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:43:05] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:43:05] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:43:05] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:43:05] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 200 10045
+[10/May/2019 09:43:05] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:43:05] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:43:05] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[10/May/2019 09:43:05] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 200 148536
+[10/May/2019 09:43:05] "GET /static/js/csrftoken.min.js HTTP/1.1" 200 1630
+[10/May/2019 09:43:05] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 200 29110
+[10/May/2019 09:43:05] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 200 7756
+[10/May/2019 09:43:05] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557452586171 HTTP/1.1" 200 2824
+[10/May/2019 09:43:05] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[10/May/2019 09:43:05] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[10/May/2019 09:43:08] "GET /accounts/user/list/ HTTP/1.1" 200 12361
+[10/May/2019 09:43:09] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[10/May/2019 09:43:09] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[10/May/2019 09:43:09] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[10/May/2019 09:43:09] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[10/May/2019 09:43:09] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[10/May/2019 09:43:09] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[10/May/2019 09:43:09] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:43:09] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[10/May/2019 09:43:09] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557452589587 HTTP/1.1" 200 2824
+[10/May/2019 09:43:09] "GET /static/favicon.ico HTTP/1.1" 200 1150
+1bQ7Og0BJyylV-jqLhKPygSOP-ewTRR7sLL3COqtWzcTHKJLXKMgTXlO-ItSQLQS4r1Lpd9UCwHmgsfxyNKdWW33Q_dTJoctI2QdTX_F7OCozMNlqDj1s4y1ZEVhLC5y82HKEjmmI-1OwOFmef3FYayh-ympWlJ8J54QOJm_uJTCH6_l0bl6QeWGw8oi7IuAkqJdhIpHDBgAgy4jVOkPgf18vMtKEnRLvWOH5bfVUfk', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+[10/May/2019 10:39:47] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/ HTTP/1.1" 302 0
+[10/May/2019 11:39:58] "GET /?app_id=cc&c_url=http://0.0.0.0:8083/static/img/error.7eabdbb.png HTTP/1.1" 302 0
+[10/May/2019 12:29:48] "GET / HTTP/1.1" 302 0
+[10/May/2019 12:50:04] "GET /?error=request_unauthorized&error_debug=The+login+request+has+expired%2C+please+try+again.&error_description=The+request+could+not+be+authorized&error_hint=Check+that+you+provided+valid+credentials+in+the+right+format.&state=security_token%3DDXmZhGW4G4biXWhC7zUwEUnwSLJJ5QLX HTTP/1.1" 302 0
+[10/May/2019 12:50:09] "GET /?code=YI5xBXGQNT2VidNPKNgvt4cjMDhAz_VcjsF2V0GroOs.Pk6vLaVFNvvitAX1a8K5bMReerPVXKGEDBXzesB0F-s&scope=openid&state=security_token%3D6THRFXwVTEzFXpFKSk8RC1FRnan5G1xA HTTP/1.1" 302 0
+[10/May/2019 12:50:09] "GET / HTTP/1.1" 302 0
+Validating models...
+
+May 10, 2019 - 10:39:42
+Django version 1.8.11, using settings 'settings'
+Starting development server at https://bk.com:8003/
+Using SSL certificate: login.cert
+Using SSL key: login.key
+Quit the server with CONTROL-C.
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2F%26app_id%3Dcc%26security_token%3DnXAJkwQZwpZPssSEymZqkJU1rbFduNZj&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F0.0.0.0%3A8083%2Fstatic%2Fimg%2Ferror.7eabdbb.png%26app_id%3Dcc%26security_token%3D67Iuru60GUc2uT9wdQ6hZJWX92mwLinF&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DDXmZhGW4G4biXWhC7zUwEUnwSLJJ5QLX&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3D6THRFXwVTEzFXpFKSk8RC1FRnan5G1xA&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'YI5xBXGQNT2VidNPKNgvt4cjMDhAz_VcjsF2V0GroOs.Pk6vLaVFNvvitAX1a8K5bMReerPVXKGEDBXzesB0F-s')
+(u'+++access_token post params: ', {u'code': u'YI5xBXGQNT2VidNPKNgvt4cjMDhAz_VcjsF2V0GroOs.Pk6vLaVFNvvitAX1a8K5bMReerPVXKGEDBXzesB0F-s', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'f9sNM4w0POuMZrfn32oHHQACeeG8vVdihFyUDMSCjco.Ccs1VT_rDJPki1fWky4VIUcwGgcO5jbaghgLG9Y4S-U', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiRFZOX082UWlTSTlqaTRFZ0FRaE9DUSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NjM4MDUsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ2NzQwOCwiaWF0IjoxNTU3NDYzODA4LCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiJiMDdlODg2OC0yZTc1LTQ1MjAtODBlOS02MTJlNjVkNWQxYTkiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NjM4MDQsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.ZXWA5B9wIZEJfLkFQSImjUdJPS8Mz1O_qaGCqvNUD4JdlEKwPWYbeufBVgdvp-sWAmQKbcXuFqU2ZCqYNm_RtcJTmodNNtAWYpt8mblRmZy03CvyWq3XSJv6Ebz8xFgzVWHBPtRre_6wdMGkGegzcJHggRGUDg4R16CKEbhWm1TFkIV6UjCbbNZMD0YwYHdeXcuHGPE-yBFf_EfQgteAOyac1H4Juq2h2bf8fuz_hnP4g_DPQPocDIHSrrCSi5U2aC6z3Ek2H00zqn_BBJ0gI1b8LiAZ089awiVTfWXqmVvbE_iINKI1XMINY-NkEJ-1xo5JxM4vsOQvnGUwurHPTNmat_jEccdYtaF82x4s9d9GMh74egwCNI7q61mwRf-Ax1rMUHK3wUxhPWToLTMjpgx7iNogwED5P5XnlAM-u4FAvcS8wDWHrC3WJpACZZc7b08wO1IRMWoHRIK62yrT2a6LCyV914jhpBfbLI0E7vwPxH-06Aw8koZVFHpiLyl2rg4UurQXz12NY3d45wyN-qahpKWFyI_yHu1pRrZ91-diHT75U5p_FCQV5QN7j4nh-6w1OgiISsFiC2zjQ9JFI5xuyKBk3FJua811a4QE62GBgtDPH4gqRV4qo8KoM8nXmxWmguoKUP1jdWT34QLUIl1uu6dtbeUBaTOoUWYZbg4', u'expires_in': 3600, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DNmSZJtpBWy5D05fTIZJCwEHEd68MYEIp&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'eDx1qlHSy5PxaJYkuc5MlP1bjP6cxvh5fsOzvkorKKU.pmv6zxv7bPhBp37eWbukXKA-i2CJhYeYsE5efjTpWTs')
+(u'+++access_token post params: ', {u'code': u'eDx1qlHSy5PxaJYkuc5MlP1bjP6cxvh5fsOzvkorKKU.pmv6zxv7bPhBp37eWbukXKA-i2CJhYeYsE5efjTpWTs', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'QyBziC_Gn37PMdk8GHbyVHuNyf8t6NzjEx5WSIMgSmc.KJ[10/May/2019 12:50:14] "GET /?code=eDx1qlHSy5PxaJYkuc5MlP1bjP6cxvh5fsOzvkorKKU.pmv6zxv7bPhBp37eWbukXKA-i2CJhYeYsE5efjTpWTs&scope=openid&state=security_token%3DNmSZJtpBWy5D05fTIZJCwEHEd68MYEIp HTTP/1.1" 302 0
+[10/May/2019 12:50:14] "GET / HTTP/1.1" 302 0
+[10/May/2019 12:50:20] "GET /?code=A84OOlotln6vbshkxtZrVURrN08VpXgg-lbXfnXdYYg.xLSlsJI5EE-edpEfNg0KrbXSYBv-PpH3jc2vKEPt24o&scope=openid&state=security_token%3DrDmstTCxvH0Wrh1ipmY45jhNuaKLIrsK HTTP/1.1" 302 0
+fjfpb9AVZJz-Kn44VeuRLOcGykEhD-TRsHl1kpnQw', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiQTRyZ3J5dnpJUVdRSXgwMTRSVDUwZyIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NjM4MTEsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ2NzQxMywiaWF0IjoxNTU3NDYzODEzLCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiJiY2I0MDc0ZS00ZjE4LTRmNDctOTIyNC1mYWNhODliMzBlYTkiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NjM4MDksInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.hAY7D-4GHSPdKLH1gWZtAbmu_3OgzOUHVc8nUI9QtT2NrAUX2CT2Fy4A1F1xT_5cVvVJ9SblJ7Uui0TuJkKSl1TILRykUKij0KQYl3Cjf93EPj1ChysNwMb6YX0eiMb18hckW_qDbvyTo7d3QuQw-QJzmyFCOb8fRMu0pFO5dcRvqfn0436Mn6_agKsu2yYmO49svpqRlhdZtnNvp1xZZGW_H5YCPjF2StjzrAzJkCkLqZEfCH8xZghTVvfPlGLQPw-Hbn_TWLXAKtvLCmmGAiJJYz-Hf11c4lZPanoYrghzJa1bfRMG4DB397kDJbvm-mMxPPa8rNH9hv9nEs-TZP1OdOaHkyb5sWm6diGjJpaefQUUlDuNOUDHYJ7RkLG3raUPgCUxaanUtQD0fB0kPuO__kWoURVnikfGia4_ogyo0jBUjU7-nLgktjGZj4DiD1eRVx1H_XJjGIUZ64Y0WXEpM9tTk5kcmfKRX6BuMk20VayiNrJ62Y7J3-Bq7LAEtumwgJvaIkfBpkXgSvQrbI12D44tm9EFpcHnMr_35vuOUMyRUqyAsW8v5L3dmtVPqtEnYbsjKB-RNb6S1OQofKf74mDjy5phrXB5tWS10EbWRO2fDpvvYgxbFILKm4rxCxK8UA4vFWsG1k6pxpBwL9ZKq56k-jcXzhoaNyYI0Ss', u'expires_in': 3600, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DrDmstTCxvH0Wrh1ipmY45jhNuaKLIrsK&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'A84OOlotln6vbshkxtZrVURrN08VpXgg-lbXfnXdYYg.xLSlsJI5EE-edpEfNg0KrbXSYBv-PpH3jc2vKEPt24o')
+(u'+++access_token post params: ', {u'code': u'A84OOlotln6vbshkxtZrVURrN08VpXgg-lbXfnXdYYg.xLSlsJI5EE-edpEfNg0KrbXSYBv-PpH3jc2vKEPt24o', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'UZEc5qWmroa_7-iSAFGX2EwFM-7635fFfjU1KAflh-c.qNqdgGxFv8kW9T9YL8K48vl04Mvr23sViYOQTaoVH-w', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiZ2JXR2V3d0hRR0ZtOThHZjExMGxWUSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NjM4MTgsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ2NzQyMCwiaWF0IjoxNTU3NDYzODIwLCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiJkOWRjMmZmNS04ZTQ1LTQwOTUtOGMzNS0yYjA1MDdlMzAyMzQiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NjM4MTQsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.5nKR8DDzBE8nY-KF1HNShcA6lx9nSO74vfLvPbDOZh2tCWbJRFU9JzjJjaJbqOMfO5EykjcKQlJ8tJqE88fjsbsHT4SfPQbbzXD-TGLYjFUd8DzkHNe7L7OdnxXQ476wBMeCzzhCBkaQHJiLDRcSSGfGPaeN43_4WxXUyEIxg7ffjcPSI895Ac3ffRZbV5g5l9wbEzOwx_1Y24eQx5xySz0O3KSZIaymSQnlnFhSFDpmsC34JgXpBsD1y2IpJWzX3EQAQqed0l23jRGUXdyrqcBysuuaBbf72j2waxhDdl0N1vavaBZ9A0NVVr5WWnpKuw40XhClD8tQyrTbQzOH1XO_rsck4vPg0-pFWUj1gSWgA8MYTF8DWk-kELP2VRxJ3Ju1og7BTFh8MgVbmjIp6oSeSMTfXTvKoeWihJQUneFgbFikJUqjbPqQZc-OB7TQJPPfzHIUAQRmGuj2mkCZFnhNyM5EWsx7-pm5ueKrT0_FCKF1smS1tP-auMGNra4ChzXBeTIJ2xUKCy8m5HFlAbkyP-m3Or5aXMQPoTQ8D1pJU3jhoPqb2phtqmPsBtOrf7sFZJMuOEjjPXUTs_Tfm7XgnbOTMXEaT7ZQdH8NM4_y5TpTsgnEFuGkb02ej0feXTIuzPKoL9njlfRMUNdx7mVJ3Xl1Oda5PICkqPn4PRM', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3D3Sd9W68mEuH22Y[10/May/2019 12:50:21] "GET / HTTP/1.1" 302 0
+[10/May/2019 12:50:37] "GET / HTTP/1.1" 302 0
+[10/May/2019 12:50:41] "GET /?code=J6aCN58u67DBMVq8exISqyc9Y0P489fwAwUDppiVlbI.Zitc1Luw1kJMobU9hGrTXk0ZIthVfPq-ZIN77E-kbRM&scope=openid&state=security_token%3DrpmYRD7CRByKkxWR1mRct1kKQ7xcSveH HTTP/1.1" 302 0
+[10/May/2019 12:50:41] "GET / HTTP/1.1" 302 0
+rBc8AAt4bFCrVDdWHc&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DrpmYRD7CRByKkxWR1mRct1kKQ7xcSveH&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'J6aCN58u67DBMVq8exISqyc9Y0P489fwAwUDppiVlbI.Zitc1Luw1kJMobU9hGrTXk0ZIthVfPq-ZIN77E-kbRM')
+(u'+++access_token post params: ', {u'code': u'J6aCN58u67DBMVq8exISqyc9Y0P489fwAwUDppiVlbI.Zitc1Luw1kJMobU9hGrTXk0ZIthVfPq-ZIN77E-kbRM', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'W5qvz4xYfstDx-ZG4E5LljZJ_ed6pe_85-3vN_BGdrY.ZgOOu_DJ2_s6kTWv5scZLsWfkMpU_k3ILdU4F5lrcYE', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoidTRxTTI2dW1MUlY4NkxJcUZNY0R2QSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NjM4MzgsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ2NzQ0MSwiaWF0IjoxNTU3NDYzODQxLCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiIyN2I1ZTdkMS00MjkxLTQwOTItOWI4ZS1lN2Y4ZmM5ZDMzYzciLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NjM4MzcsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.4k_7_qQTsEL4Sa1i8s2io6k_e4ZbuZNOdJOEZ9ZILMjSm6R2iouLUDzJHhTK5Ehynmm9nRtKtNSSkKhwqCpUi1D8u1iTG0gqPjUFgSAKwmE6AEyWmDs5zF1SnXXfeegoG3IoqJp5bCyYiCNzStbFIl658J7R06sBxkmpXImpAQRd3uz9cY5GXSGtSqj0PqevmT5OhNGJW8Xp6puUrHO3Z0eFrnRG0lRq2EZnSopuNtKoqrcpf4O7_VU5Jk84zfxyixg-3m64uje-NC-SUxpfIKVZV1eMG2YAi7WmDgUfjaAJbZoOHf9VNnEwPjNtAczwzIkuJDRRexmeVnpLx6DMP9JPLlgn-IvKYE96b4ZTRVI6MB2FlIrE_iCUUUZnikHf1irXZ03wzk9nQR18WbjeHAT9YqSBb6KVwc_qfTPfqGB18pNETrumAIHl7pSiMuMAp36cBs81poJ11S1LigcXoCbEgOMNsuDAp3iBoDX5PfFU58Q6KkouX1dink0-R7nVUzHsz9jFEcqZJ1unRGuKc6EtcggPg5-gHPhIVTHFCJqTQwxGlCSQQSW-6fPDRdouPqtz8pTzFnmcUFF4VKKCdO1Ceo3Jq8yu5LDyTUth_1FxiroU2Zc9viBPwX8envjWuGtUOXWDKPqlXXlJu-_-aa8JH7ZPqugTh4_onu8bssc', u'expires_in': 3599, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+(u'oauth login url: ', u'http://10.10.26.24:4444/oauth2/auth?scope=openid&state=security_token%3DV0eAiDaTkHi1ct64iDj95pW7kZh1mxup&redirect_uri=https%3A%2F%2Fbk.com%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'IwqZWpFHGFXJkIjKME0b2x7SHVRGP-7Jsg58cdkNmXw._kBOpNaB6VN8VHZk9KVW0L1JcDMHobsHeM809cbTeZ0')
+(u'+++access_token post params: ', {u'code': u'IwqZWpFHGFXJkIjKME0b2x7SHVRGP-7Jsg58cdkNmXw._kBOpNaB6VN8VHZk9KVW0L1JcDMHobsHeM809cbTeZ0', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'https://bk.com:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'4Fv4CQz4sLbywlcFRmJDsJbszd9rH6RS3bKmpKMtycw.ZR7RSc69Yp6HkFkWDHrV5Ayr14FBsf449lMZTmn5dI8', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzowYWVlMTExZS1iMTE2LTQ2ZWQtYTExOC00NDZiMjk1YzA3ODYiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiUGE2WEdGdE5Ic3JzWFdjY05UcmR5QSIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc0NjM4NDQsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzQ2NzQ0OCwiaWF0IjoxNTU3NDYzODQ4LCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0NC8iLCJqdGkiOiI0YmU3MzE1ZS1jZGE0LTQ1ZmUtOTlhMC01NWQwODc1ZjE0YzUiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc0NjM4NDEsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.emrB1yyyJpfL_tjfck8LE9Wd-tyDl0DHKAwcRSZhhPZwdQb0FPx4aw3ir7Sf9QDbqC10UDhfhIh_Crt5rgEEMjjWlBARGOhYoMip8ghAQdoFMYiz7tFae5VqYMp_EIdC4jhXmBh6MwP6aZwKHJWbt_ioS41dKa1rwClaCoiW--xaENZXV_rtKVmb7-I2P9KDbKfFcjvwwZv_1i8CePOG_jlCscZMogBFfTzlYYbO8a6gyiotUsqZrdJwUMIyUfZwmLQYpiKNYeRn-R7oT_5sPD6YH76E4XDIVZQek6d9_Y3Von_JMwLJHLsqOzpc2qQ8[10/May/2019 12:50:48] "GET /?code=IwqZWpFHGFXJkIjKME0b2x7SHVRGP-7Jsg58cdkNmXw._kBOpNaB6VN8VHZk9KVW0L1JcDMHobsHeM809cbTeZ0&scope=openid&state=security_token%3DV0eAiDaTkHi1ct64iDj95pW7kZh1mxup HTTP/1.1" 302 0
+[10/May/2019 12:50:48] "GET / HTTP/1.1" 302 0
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+[11/May/2019 15:41:03] "GET /logout/ HTTP/1.1" 302 0
+[11/May/2019 15:41:03] "GET /?is_from_logout=1 HTTP/1.1" 302 0
+[11/May/2019 19:00:43] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[11/May/2019 19:00:59] "GET /?code=IQ9Q_NhM2TsWkZLxaUhbwFlxmR8vTE8dhnITpou4Xy0.PURvbqRx7yPHqtbOWmtttMeCrutQub4Iz8hSob3iyaI&scope=&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DEtvvtDAm066CmzhHnLCiviWFHKAQgRu8 HTTP/1.1" 302 0
+[11/May/2019 19:00:59] "GET /accounts/get_user/?bk_token=Nbn1kevzvQdgf27Qulrs2LgMEwJM_783Y4BQFeeGlDo HTTP/1.1" 200 280
+[11/May/2019 19:01:01] "GET /accounts/get_all_user/?bk_token=Nbn1kevzvQdgf27Qulrs2LgMEwJM_783Y4BQFeeGlDo HTTP/1.1" 200 474
+[11/May/2019 19:04:11] "GET /accounts/get_all_user/?bk_token=Nbn1kevzvQdgf27Qulrs2LgMEwJM_783Y4BQFeeGlDo HTTP/1.1" 200 474
+[11/May/2019 19:05:14] "GET /accounts/get_all_user/?bk_token=Nbn1kevzvQdgf27Qulrs2LgMEwJM_783Y4BQFeeGlDo HTTP/1.1" 200 474
+[11/May/2019 19:05:31] "GET /accounts/get_all_user/?bk_token=Nbn1kevzvQdgf27Qulrs2LgMEwJM_783Y4BQFeeGlDo HTTP/1.1" 200 474
+[11/May/2019 20:52:08] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[11/May/2019 20:52:12] "GET /?code=chdd7V5tIzFi_ziXuTG6WBshiqJYCE1IRhVXLOcwqsI.immxK-arJGu4EInVbXK7Hkv71CmzAtmLK5cnnw_0w0c&scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DPGzr4Jr2d14FZbJu9dfJ9W0b8TwmcU6J HTTP/1.1" 302 0
+[11/May/2019 20:52:13] "GET /accounts/get_user/?bk_token=c0zf8ml4phJKdVIuGS8bJtml3A3-NfiFUAhLwXh28MM HTTP/1.1" 200 280
+[11/May/2019 20:52:13] "GET /accounts/get_all_user/?bk_token=c0zf8ml4phJKdVIuGS8bJtml3A3-NfiFUAhLwXh28MM HTTP/1.1" 200 474
+[11/May/2019 20:52:48] "GET /accounts/get_all_user/?bk_token=c0zf8ml4phJKdVIuGS8bJtml3A3-NfiFUAhLwXh28MM HTTP/1.1" 200 474
+[11/May/2019 20:53:07] "GET /accounts/get_all_user/?bk_token=c0zf8ml4phJKdVIuGS8bJtml3A3-NfiFUAhLwXh28MM HTTP/1.1" 200 474
+[11/May/2019 20:54:52] "GET /accounts/get_all_user/?bk_token=c0zf8ml4phJKdVIuGS8bJtml3A3-NfiFUAhLwXh28MM HTTP/1.1" 200 474
+[11/May/2019 20:55:52] "GET /accounts/get_all_user/?bk_token=c0zf8ml4phJKdVIuGS8bJtml3A3-NfiFUAhLwXh28MM HTTP/1.1" 200 474
+[11/May/2019 21:17:28] "GET /accounts/get_all_user/?bk_token=c0zf8ml4phJKdVIuGS8bJtml3A3-NfiFUAhLwXh28MM HTTP/1.1" 200 474
+Performing system checks...
+
+May 11, 2019 - 15:40:47
+Django version 1.8.11, using settings 'settings'
+Starting development server at http://10.10.26.24:8003/
+Quit the server with CONTROL-C.
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3DhYffNqvkbE7QYW8LPPgMeF583tBy6sv3&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DEtvvtDAm066CmzhHnLCiviWFHKAQgRu8&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'IQ9Q_NhM2TsWkZLxaUhbwFlxmR8vTE8dhnITpou4Xy0.PURvbqRx7yPHqtbOWmtttMeCrutQub4Iz8hSob3iyaI')
+(u'+++access_token post params: ', {u'code': u'IQ9Q_NhM2TsWkZLxaUhbwFlxmR8vTE8dhnITpou4Xy0.PURvbqRx7yPHqtbOWmtttMeCrutQub4Iz8hSob3iyaI', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'http://10.10.26.24:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'J8Z1dVxT8aQaGWGyl5BAAxqEkTn2CtfDmLF95gb4d7c.RorU2ZtT48-PC1BlZBWyHYAKP47rTDyRD_idhFi-CYs', u'scope': u'', u'expires_in': 3599, u'token_type': u'bearer'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'url host: ', u'http://10.10.26.24:8083/', '10.10.26.24:8003')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DPGzr4Jr2d14FZbJu9dfJ9W0b8TwmcU6J&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'chdd7V5tIzFi_ziXuTG6WBshiqJYCE1IRhVXLOcwqsI.immxK-arJGu4EInVbXK7Hkv71CmzAtmLK5cnnw_0w0c')
+(u'+++access_token post params: ', {u'code': u'chdd7V5tIzFi_ziXuTG6WBshiqJYCE1IRhVXLOcwqsI.immxK-arJGu4EInVbXK7Hkv71CmzAtmLK5cnnw_0w0c', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'http://10.10.26.24:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'BIxLu_2dwBmx9NAGWcdP6MxJ8Tq12cse_gi9VTE50FY.Jsd5nA-K8hInR0eEVES4wLdcRPzQJkDfmO_KZyUqEI4', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzplZDc5ZTI4MS0zMTZkLTRjZDktYTFiYS1mZjBkMDIzMWEwZWIiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiM2toNGpkVV8tMjhCNkI0TTFaRDNkdyIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc1NzkxMzAsImNobmFtZSI6IjIyMiIsImVtYWlsIjoiMjIyQDIyMi5jb20iLCJleHAiOjE1NTc1ODI3MzIsImlhdCI6MTU1NzU3OTEzMiwiaXNzIjoiaHR0cDovLzEwLjEwLjI2LjI0OjQ0NDMvIiwianRpIjoiM2E5NmNmNDMtM2ZlMC00NDZlLWExMmYtMjc4YzAzYWFhMTFkIiwibm9uY2UiOiIiLCJwaG9uZSI6IjIyMjIyMjIyMjIyIiwicmF0IjoxNTU3NTc5MTI4LCJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.xbIBjetMv2bpYH-ybdfR3p1tpkRzbLVI1UCzZqpG-DpQ6eKrp1T0_BIurJvHKA9IQ8xz5ECb-C77cmm12XE8DsiedgbDC_wEQw4Z2Eg-uExzy_oIx5_k86TAhOWV-Esbu_8PrWGBjAEA8s2azizDd-V2zetSFn_PIJmwNITVzJouP4OdLm9-0n7LZuJr1l8WUhtOJK_t1YdnZ1yXzZnhQ2TP5LXjdF3nqY7OHcZMjA1YOaienNAW4fDvZ7bx7PHKAJdmJWxKhF7qxYika2EMj54QvuIjNzonDoTDIl5H4k147OR2nE5Q5GVyAK3Pnm-SttUaNi7G813tajFo_54fv5Vk6ZsP39tNk0QiQ6o48hEryKfKvdCxewrbbrFqejRJgWthgbIKk6aaST77EFp8ExvZU8uMXlPWxkVxZRxuaEor3ue2j_oaOu0-ONliwVUCdTKajDcEHlT2ezmE40dOZYKOVJChhRrZKCD3d6J4_8lFGen11lFle5xHKGZGfAlHzLrP6BR2l2wPF7beUz43TF4faOAKs5YU9avEcdvCWPyJ3pl9ZzdtZOm_AbNm_639B138MKY-oVmMzNd2ekl6xG0LMzjOyXliTXdMqSCNnlXaNMb-FyWjYCSXzUQMnExqJTHyf7XRoM83blFEC5jiN0xe6bck6Xf6C1XWkiMS6go', u'expires_in': 3600, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222', u'sub': u'admin'})
+(u'userinfo', {u'username': u'admin', u'phone': u'22222222222', u'email': u'222@222.com', u'chname': u'222'})
+(u'url host: ', u'http://10.10.26.24:8083/', '10.10.26.24:8003')
+(u'oauth login url: ', u'http://10.10.26.24:4443/o[12/May/2019 11:36:52] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 11:37:27] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 11:37:32] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 11:37:33] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 11:37:34] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 11:37:44] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:24:42] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:24:43] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:24:55] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:25:02] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:35:05] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:35:41] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:36:04] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:37:33] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+auth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DM5myjarTp2zsjR07bJkWIa3UzAZnDgyc&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DeTn6QWfA1USpkW1eA2uAQ109BfWqUXWV&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D5GadWQYN84SiZMyf4G55F1eHDw6xgrMU&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DWB0Z1cULPYHnGV5p3DZiKFdYf1cGqt4W&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D3wMvBsuv4yE9HpWKsW0GeqRPm0CaZKBU&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D3eFsLPTKawS8IVaqa1e3XQQTSNQPPBFA&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DRTDETrFfMSUDWa1wi1ZLHeGjd71Fg1ci&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DxDhGNFA1Fu8kQZpmZamUCrJpZw4qLxXs&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3Dzy3rqcMZttZ13stBjM4baseFQpzkHLac&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DdvpqFjrdafcJtqTXieZCvdb4q8NGT3JH&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D6tx6CtSWkrkF2kxLA7tGGbPd1XADdWYF&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D2VCmX8LAQSgpArI4wA8ZigJCmzvY2hfj&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DxkDtNYdcYmp4L5znNQRYeNs8yJBx8xWz&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DcgY7t5cLNG7cSFwIRPEEwSAHFmDTgNrK&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DJbi4VzDKxwxr13rc8MzKPPuraPaaa1XQ&redirect_uri=http%3A%2F%2F10.10.26.24[12/May/2019 16:37:36] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 16:37:38] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 20:55:11] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[12/May/2019 21:17:18] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 00:24:45] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 00:24:45] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/static/js/18.179801c9620056c27534.js HTTP/1.1" 302 0
+[13/May/2019 11:17:27] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 11:21:16] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 11:22:02] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 11:22:40] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 11:27:57] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 11:50:50] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 11:59:29] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 12:13:20] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+[13/May/2019 12:17:50] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 12:22:19] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 14:29:24] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 14:29:30] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 14:29:42] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 14:43:29] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 15:50:44] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[13/May/2019 17:00:49] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[14/May/2019 07:34:23] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[14/May/2019 07:36:01] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[14/May/2019 10:07:44] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+[14/May/2019 10:07:46] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:10:17] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:11:38] "GET / HTTP/1.1" 302 0
+Performing system checks...
+
+May 13, 2019 - 12:16:13
+Django version 1.8.11, using settings 'settings'
+Starting development server at http://10.10.26.24:8003/
+Quit the server with CONTROL-C.
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DTjTPFCmUKCum3KQm4qdmXZyw4DkkHesb&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D9LMNKJBarSdmBydnvfrEdVvb920IXXMY&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D3K2ZWz4YBTqZMxa2Nk9XtYB1XcpShwx8&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D7h6LV7hEFrxtMdZRCEU0Ff2uktfUHSwv&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3Djn36NY2aAmRRF1GBCzDgNENMhBsUY7RN&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DS1aBHSf2cP50bWH7k4uBaHSPGxgU9Mdb&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DKENbRnred19mmgPnb728enY2hf90DZfW&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DPuiXNcPL97exZXhHYKgpXTvg5Is568Ub&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3Ds5xcvI4vIfL0AmvZH3Y9B7phJvD1XHZ4&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DV9xLxfBECYNKuK4dWCaJjVFZpFx3Sz4b&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3DcSPZE3K9Sc6wp5KMBRz0kYtYJ0N60WQ6&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3D7iKA5yfsqMrftnAAL6BZWeNxDY5pzyQE&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3DLDTQE1BkZ0FPVLyi2RUX7A8D0UDXkTXV&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3Dkm1iYLwvYvB7vSVBHZA73CS63KedaHNV&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3D5eIGGMxVejIGPvU6J6IbBSaK0SnwzU02&redirect_uri=http%3A%2F%2F10.10.2[14/May/2019 10:11:50] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:14:03] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:15:22] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:22:23] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:28:02] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:28:07] "GET /?code=YUdhyhTg8MUpwmWL2maXQlMtmoFmWzitwnjB_d1S0rY.EfjAekmzUhhvvfTME_ZKAzRgkdC4GmUY9RQbU_eGg00&scope=openid&state=security_token%3DgpgyJ9Z4GvkQ7fFmqwasmampNx8VHntC HTTP/1.1" 302 0
+[14/May/2019 10:28:07] "GET /accounts/user/list/ HTTP/1.1" 200 12361
+[14/May/2019 10:28:07] "GET /static/assets/bkDialog-1.0/css/ui-dialog.css HTTP/1.1" 200 2215
+[14/May/2019 10:28:07] "GET /static/css/layout_head.min.css HTTP/1.1" 200 6429
+[14/May/2019 10:28:07] "GET /static/assets/bk-icon-2.0/iconfont.css HTTP/1.1" 200 10922
+[14/May/2019 10:28:07] "GET /static/assets/select2-3.5.2/select2.css HTTP/1.1" 200 14951
+[14/May/2019 10:28:07] "GET /static/css/base.min.css?v=0.0.6 HTTP/1.1" 200 103371
+[14/May/2019 10:28:07] "GET /static/assets/bootstrap-3.1.1/css/bootstrap.min.css HTTP/1.1" 200 99961
+[14/May/2019 10:28:07] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[14/May/2019 10:28:07] "GET /static/assets/bootstrap-3.1.1/js/bootstrap.min.js HTTP/1.1" 304 0
+[14/May/2019 10:28:07] "GET /static/assets/bkDialog-1.0/js/dialog.js HTTP/1.1" 304 0
+[14/May/2019 10:28:07] "GET /static/assets/select2-3.5.2/select2.js HTTP/1.1" 304 0
+[14/May/2019 10:28:07] "GET /static/js/csrftoken.min.js HTTP/1.1" 304 0
+[14/May/2019 10:28:07] "GET /static/assets/jquery-1.8.2.min.js HTTP/1.1" 200 93433
+[14/May/2019 10:28:07] "GET /static/js/users.min.js?v=0.0.6 HTTP/1.1" 304 0
+[14/May/2019 10:28:07] "GET /static/img/logo/logo_user_01.png HTTP/1.1" 200 3777
+[14/May/2019 10:28:07] "GET /static/img/logo/logo_user_02.png HTTP/1.1" 200 2033
+[14/May/2019 10:28:07] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[14/May/2019 10:28:07] "GET /static/img/getheadimg.jpg HTTP/1.1" 200 2300
+[14/May/2019 10:28:08] "GET /static/assets/bootstrap-3.1.1/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+[14/May/2019 10:28:08] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557800890046 HTTP/1.1" 200 2824
+[14/May/2019 10:28:08] "GET /static/assets/bk-icon-2.0/fonts/bk_icons_linear.ttf?3xrc6s HTTP/1.1" 200 42580
+[14/May/2019 10:28:09] "GET /logout/ HTTP/1.1" 302 0
+[14/May/2019 10:28:09] "GET /?is_from_logout=1 HTTP/1.1" 302 0
+[14/May/2019 10:30:29] "GET /?app_id=cc&c_url=http://10.10.26.24:8083/ HTTP/1.1" 302 0
+6.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3D7HgMEFTYJAb5dDw5WULMZ2EB1qXKmag4&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3DI2qHCvHxQPquxrgYFy90JfwysWBtT9f1&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3DL94Afj4NC9eXRr3wknPuWztZ2eiexfQN&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3DgpgyJ9Z4GvkQ7fFmqwasmampNx8VHntC&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'YUdhyhTg8MUpwmWL2maXQlMtmoFmWzitwnjB_d1S0rY.EfjAekmzUhhvvfTME_ZKAzRgkdC4GmUY9RQbU_eGg00')
+(u'+++access_token post params: ', {u'code': u'YUdhyhTg8MUpwmWL2maXQlMtmoFmWzitwnjB_d1S0rY.EfjAekmzUhhvvfTME_ZKAzRgkdC4GmUY9RQbU_eGg00', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'http://10.10.26.24:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'kA1V06Xfhju0lXu1Y1XWTGc0l_xKsAGIoSG5lwQtKKM.iSTE3t5q0txoJUQ49v3mlI3B0RQDJdmjWS8X8mSqJHs', u'id_token': u'eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzo4NGM0ZWYyNC1jNGVjLTRjMWYtODk1My00N2ZjMzY1OTYyOWEiLCJ0eXAiOiJKV1QifQ.eyJhdF9oYXNoIjoiemRLOVJnNldPLU1zeHQ2ZTBGbGRpdyIsImF1ZCI6WyJ0ZXN0LWNsaWVudCJdLCJhdXRoX3RpbWUiOjE1NTc4MDA4ODQsImNobmFtZSI6ImhlcnVua2FuZyIsImVtYWlsIjoiaGFja2VyQGdtYWlsLmNvbSIsImV4cCI6MTU1NzgwNDQ4NiwiaWF0IjoxNTU3ODAwODg2LCJpc3MiOiJodHRwOi8vMTAuMTAuMjYuMjQ6NDQ0My8iLCJqdGkiOiIxMzMwNjY4OC1hNTA2LTQ0YjMtYWY3MC1lODE4NjkxMmUxZDgiLCJub25jZSI6IiIsInBob25lIjoiMTg1MTgzMDMzNjUiLCJyYXQiOjE1NTc4MDA4ODIsInN1YiI6InJ1bmtpbmciLCJ1c2VybmFtZSI6InJ1bmtpbmcifQ.YKGqgBU1KxOnolRGNMZYIYNmlvmGjtvDGZSbZ2r71b6W28Nq6nKhx0BCgFf5xY_-HnxhZ2tOKU79xYbxaLb3Tf25yvS1byahdT1kI_jLrl0e7CTWHobVJnsrq_jPtfcjpz4jhXy9gB7I1kxdoHdFfULARspquU8xEFx_YLN6C8InZIadAoyjziBqTQb20V0T0cACM-Ys-4b8DMVj1Bd1-klvLv4rJ2t1njSnAMs27ODEsf3JDCH0TI-nLDNwmDTOXcJkn5gjOJRuRdPT5rnJUAj_7w-PqHPlOosdCdLVCGSyJdsARTzqM3ZwwcgoNQDcMkTYchcFdffdmruKKTF3sn7mEVFZPzrxTAM7b9bNJiSZA_M1cNKHu37N4KwdY3zuq50-Hyw1jeurCddKlLHhMbEYn3JPnuBbcNoDoqx-4rvRph2wI1pXmBF-OqCNExyq9c6vBehZzkwpE7pchBxeIb2MXq4buexIsVY4JIz8voBeTpzi5Wf87mc9y17BL1zYX9SkCDSxOukjb4pig1D6DiDEi3wtxHikEOjugIjVXo09mEekq3dZjJ4c_kk326CzMtt58U94paYq1Rott3sefjaMmWvZxqM9UCUMZZPAtq63Cz93oDBCqPUEAsRJg36u0x5RFZEB25Qc3vdQln33rgMf1jhYJoxrUvCfyhYtaRA', u'expires_in': 3600, u'token_type': u'bearer', u'scope': u'openid'})
+(u'+++raw userinfo: ', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang', u'sub': u'runking'})
+(u'userinfo', {u'username': u'runking', u'phone': u'18518303365', u'email': u'hacker@gmail.com', u'chname': u'herunkang'})
+(u'url host: ', u'', '10.10.26.24:8003')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=security_token%3DSyfLbz9DhtYJPJGnWUITFBVAdxZ6ryrE&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'oauth login url: ', u'http://10.10.26.24:4443/oauth2/auth?scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D25a6Xvc8WImCXvg8XmikzLWaKwRg2x6W&redirect_uri=http%3A%2F%2F10.10.26.24%3A8003%2F&response_type=code&client_id=test-client')
+(u'+++code:', u'25N689pHnyJWuX0PBb2_ErnyJR1otHRnvH30W97K5b8.coL144RcMIEZGqYJDht6Eey_Ztrtw1alMYlaDY2MHCg')
+(u'+++access_token post params: ', {u'code': u'25N689pHnyJWuX0PBb2_ErnyJR1otHRnvH30W97K5b8.coL144RcMIEZGqYJDht6Eey_Ztrtw1alMYlaDY2MHCg', u'client_secret': 'test-secret', u'grant_type': u'authorization_code', u'client_id': 'test-client', u'redirect_uri': <SimpleLazyObject: 'http://10.10.26.24:8003/'>})
+(u'+++get access_token: ', {u'access_token': u'MepAN79hXqyYZ9GMTJU[14/May/2019 10:30:34] "GET /?code=25N689pHnyJWuX0PBb2_ErnyJR1otHRnvH30W97K5b8.coL144RcMIEZGqYJDht6Eey_Ztrtw1alMYlaDY2MHCg&scope=openid&state=c_url%3Dhttp%3A%2F%2F10.10.26.24%3A8083%2F%26app_id%3Dcc%26security_token%3D25a6Xvc8WImCXvg8XmikzLWaKwRg2x6W HTTP/1.1" 302 0
+[14/May/2019 10:30:34] "GET /accounts/get_user/?bk_token=Rv_EbnW_quqVq9xGwhFoGRfF4AkGWIJez9CRM8bKbvM HTTP/1.1" 200 293
+[14/May/2019 10:30:35] "GET /accounts/get_all_user/?bk_token=Rv_EbnW_quqVq9xGwhFoGRfF4AkGWIJez9CRM8bKbvM HTTP/1.1" 200 474
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+[14/May/2019 10:45:35] "GET / HTTP/1.1" 302 0
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+[14/May/2019 10:46:16] "GET / HTTP/1.1" 302 0
+[14/May/2019 10:46:21] "GET /?code=faOW2-JYviUALh_AtrTQza9jynMa4aEHgb0QrTY5NfU.2hoIE5GDuYmTmastjSboBQUwGSXEBUZMKW1HmzV0qbs&scope=openid&state=security_token%3DDWkVDnsnpgLfkbiRc1xW6NHJkLrYHI2c HTTP/1.1" 302 0
+[14/May/2019 10:46:21] "GET /accounts/user/list/ HTTP/1.1" 200 12361
+[14/May/2019 10:46:21] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[14/May/2019 10:46:21] "GET /jsi18n/i18n/ HTTP/1.1" 200 2486
+[14/May/2019 10:46:21] "GET /accounts/user/list/query/?page=1&search_data=&search_role=&_=1557801983558 HTTP/1.1" 200 2824
+[14/May/2019 10:46:23] "GET /logout/ HTTP/1.1" 302 0
+[14/May/2019 10:46:23] "GET /?is_from_logout=1 HTTP/1.1" 302 0

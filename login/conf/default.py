@@ -106,6 +106,7 @@ SITE_URL = '/login/'
 # callback
 # PAAS_DOMAIN = 'bking.com:8003'
 PAAS_DOMAIN = config.cfg.get('server', 'paas_domain')
+#PAAS_DOMAIN = 'bk.com:8003'
 # PAAS_DOMAIN = 'bking.localhost:8003'
 
 

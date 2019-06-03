@@ -1,4 +1,4 @@
-#!/root/ex/paas/paas/login/login/bin/python
+#!/root/login/loginserver/login/login/bin/python
 # Copyright (c) 2005-2012 Stephen John Machin, Lingfo Pty Ltd
 # This script is part of the xlrd package, which is released under a
 # BSD-style licence.

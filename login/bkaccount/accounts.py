@@ -70,10 +70,14 @@ class Account(AccountSingleton):
             2)url的scheme不为：https(s)
             3)url为空
         """
+        #return True
+	print("url host: ", url, host)
         if url is not None:
             url = url.strip()
         if not url:
             return False
+        else:
+	    return True
         # Chrome treats \ completely as /
         url = url.replace('\\', '/')
         # Chrome considers any URL with more than two slashes to be absolute, but

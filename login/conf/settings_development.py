@@ -43,12 +43,11 @@ PAAS_INNER_DOMAIN = ''
 # HTTP_SCHEMA = 'https'
 HTTP_SCHEMA = config.cfg.get('server','http_schema')
 
-
 # cookie访问域
 # 修改访问域
 # BK_COOKIE_DOMAIN = 'bking.localhost'
 BK_COOKIE_DOMAIN = config.cfg.get('server','bk_cookie_domain')
-
+#BK_COOKIE_DOMAIN = 'bk.com'
 
 SECRET_KEY = 'jO149njrTj4kEx6ZbUH8Zc53bfQJctINWaEzTWIsOoxSDNwK2I'
 

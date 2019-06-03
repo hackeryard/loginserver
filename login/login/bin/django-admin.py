@@ -1,4 +1,4 @@
-#!/root/ex/paas/paas/login/login/bin/python
+#!/root/login/loginserver/login/login/bin/python
 from django.core import management
 
 if __name__ == "__main__":
